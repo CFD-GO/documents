@@ -26,6 +26,13 @@ This for instance prevents allocating enough memory at the start of the simulati
 
 - It would be nice if the factory registration and attribute check would use the same data that would be used by GUI - a preliminary version is at [doc/elements.yaml](https://github.com/CFD-GO/TCLB/blob/develop/doc/elements.yaml)
 
+##### Q & A
+- Do we want/need full DOM? Do we want to build DOM (register handlers etc) then execute? Or do we stay with read-next-when-done?
+- Maybe we could create LBM-DOM library, that will handle XML file in and out. It could have API and be free of direct LBM deps and could be used for GUI handling, python bindings for reading/writing config etc
+- Do we want to implement some syntax verification, that are avalible in XML? If so, that should be created and implemented BEFORE new Hanlers
+  - http://www.oracle.com/technetwork/articles/srivastava-namespaces-092580.html
+  - http://www.adrianmouat.com/bit-bucket/2013/11/xml-schema-validation/
+
 ## [Chimera support](https://github.com/CFD-GO/TCLB/milestones/Chimera)
 
 Aiming at a full multi-level multi-overlapping-mesh support
@@ -70,3 +77,10 @@ There is no support whatsoever for DEM in TCLB.
 ##### What would be nice to do
 
 - Load balance the interparticle calculations between GPUs or CPUs
+ 
+
+## Others
+ - Collide until some criterium is reached, without streaming. It would be usefull in some models 
+ - NAMING CONVENTION, for physical values especially. For example: multiphase config file should be reusable in different models. That is close to be OK
+
+
