@@ -56,6 +56,10 @@ There is no support for multiple meshes. There is no mesh refinement.
 
 - Auto adaptation (creation/movement of mesh wrt. some criterion)
 
+##### Q & A
+
+- Should we maybe introduce [Thrust](http://docs.nvidia.com/cuda/thrust/#axzz4BMnH2J5A) to help with this?
+
 ## Discreet Element Method
 
 Aiming at the support for discrete matter simulation support
@@ -82,5 +86,6 @@ There is no support whatsoever for DEM in TCLB.
 ## Others
  - Collide until some criterium is reached, without streaming. It would be usefull in some models 
  - NAMING CONVENTION, for physical values especially. For example: multiphase config file should be reusable in different models. That is close to be OK
+ - Clean up and update in some models, for example d3q19_heat* series
 
 
