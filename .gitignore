@@ -1,3 +1,6 @@
+*~
+site/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -7,14 +10,22 @@
 *.out
 *.toc
 *.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
 
 ## Intermediate documents:
 *.dvi
+*.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
 # *.pdf
+
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -22,12 +33,12 @@
 *.blg
 *-blx.aux
 *-blx.bib
-*.brf
 *.run.xml
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
 *.synctex
+*.synctex(busy)
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
@@ -45,14 +56,35 @@ acs-*.bib
 
 # beamer
 *.nav
+*.pre
 *.snm
 *.vrb
+
+# changes
+*.soc
 
 # cprotect
 *.cpt
 
-#(e)ledmac/(e)ledpar
+# elsarticle (documentclass of Elsevier journals)
+*.spl
+
+# endnotes
+*.ent
+
+# fixme
+*.lox
+
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
 *.end
+*.?end
 *.[1-9]
 *.[1-9][0-9]
 *.[1-9][0-9][0-9]
@@ -72,15 +104,29 @@ acs-*.bib
 *.glg
 *.glo
 *.gls
+*.glsdefs
 
 # gnuplottex
 *-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
 
 # hyperref
 *.brf
 
 # knitr
 *-concordance.tex
+# TODO Comment the next line if you want to keep your tikz graphics files
 *.tikz
 *-tikzDictionary
 
@@ -95,9 +141,12 @@ acs-*.bib
 
 # minitoc
 *.maf
-*.mtc
-*.mtc[0-9]
-*.mtc[1-9][0-9]
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
 
 # minted
 _minted*
@@ -106,16 +155,24 @@ _minted*
 # morewrites
 *.mw
 
-# mylatexformat
-*.fmt
-
 # nomencl
+*.nlg
 *.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
 
 # sagetex
 *.sagetex.sage
 *.sagetex.py
 *.sagetex.scmd
+
+# scrwfile
+*.wrt
 
 # sympy
 *.sout
@@ -126,12 +183,12 @@ sympy-plots-for-*.tex/
 *.upa
 *.upb
 
-#pythontex
+# pythontex
 *.pytxcode
 pythontex-files-*/
 
-# Texpad
-.texpadtmp
+# thmtools
+*.loe
 
 # TikZ & PGF
 *.dpth
@@ -141,15 +198,17 @@ pythontex-files-*/
 # todonotes
 *.tdo
 
+# easy-todo
+*.lod
+
+# xmpincl
+*.xmpi
+
 # xindy
 *.xdy
 
 # xypic precompiled matrices
 *.xyc
-
-# WinEdt
-*.bak
-*.sav
 
 # endfloat
 *.ttt
@@ -157,3 +216,38 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# Kile
+*.backup
+
+# KBibTeX
+*~[0-9]*
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+# generated if using elsarticle.cls
+*.spl
+
+# /*.pdf
+
+# Movies
+*.avi
+
+# R files
+*.Rhistory
